@@ -203,6 +203,12 @@ ol {
 .features-item {
   width: calc((100% - 3 * 24px) / 4);
 }
+.features-item-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+}
 .features-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -253,6 +259,7 @@ ol {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .team-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -268,6 +275,13 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+}
+.team-list-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404bbf;
+  border-radius: 50%;
 }
 
 .portfolio {
@@ -346,4 +360,23 @@ ol {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.footer-social-container {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-social-media {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.footer-list-social {
+  display: flex;
 }
