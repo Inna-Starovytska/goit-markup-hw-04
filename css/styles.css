@@ -33,6 +33,8 @@ ol {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -107,7 +109,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -132,14 +134,14 @@ ol {
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
-      to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office\ 1.jpg);
+    url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
-
-  background-position: 50% 50%;
+  background-position: center;
+  max-width: 1440px;
+  background-size: cover;
 }
 .hero-container {
   display: block;
@@ -170,6 +172,7 @@ ol {
   display: block;
   height: 56px;
   margin: 0 auto 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -310,10 +313,24 @@ ol {
 .portfolio-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
+.portfolio-cover-wrap {
+  position: relative;
+}
 .portfolio-image {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  height: 100%;
 }
 .portfolio-category {
   padding: 32px 16px;
@@ -340,6 +357,9 @@ ol {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.container-footer-logo {
+  margin-right: 120px;
+}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -362,8 +382,9 @@ ol {
   max-width: 264px;
 }
 .footer-social-container {
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -376,7 +397,32 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 .footer-list-social {
   display: flex;
+  gap: 16px;
+}
+.footer-item-social {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link-icon {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-link-icon :hover {
+  background-color: #31d0aa;
+}
+.footer-link-icon :focus {
+  background-color: #31d0aa;
+}
+.footer-link-icon {
+  fill: #f4f4fd;
 }
