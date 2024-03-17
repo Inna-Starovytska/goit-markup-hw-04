@@ -408,7 +408,7 @@ ol {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.container-footer-logo {
+.footer-container-logo {
   margin-right: 120px;
 }
 .footer-container {
@@ -483,6 +483,6 @@ ol {
 .footer-item-social :focus {
   background-color: #31d0aa;
 }
-.icon {
+.icons {
   fill: #f4f4fd;
 }
