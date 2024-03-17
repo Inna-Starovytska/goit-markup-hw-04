@@ -296,6 +296,7 @@ ol {
 .team-item-social {
   width: 40px;
   height: 40px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link-icon {
   width: 100%;
@@ -307,9 +308,7 @@ ol {
   justify-content: center;
   transition: background-color 0.3s ease;
 }
-.team-link-icon {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .team-item-social :hover {
   background-color: #404bbf;
 }
